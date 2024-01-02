@@ -1,0 +1,22 @@
+The following represents the PHP code for Library Management System involved with MySQL database
+<?php
+// Sample array of books (replace with your database connection)
+$books = array(
+    array("Title" => "Book 1", "Author" => "Author 1", "ISBN" => "123456789"),
+    array("Title" => "Book 2", "Author" => "Author 2", "ISBN" => "987654321"),
+    // Add more books as needed
+);
+
+// Display books
+echo "<h2>Library Catalog</h2>";
+echo "<table border='1'>";
+echo "<tr><th>Title</th><th>Author</th><th>ISBN</th></tr>";
+foreach ($books as $book) {
+    echo "<tr>";
+    echo "<td>".$book['Title']."</td>";
+    echo "<td>".$book['Author']."</td>";
+    echo "<td>".$book['ISBN']."</td>";
+    echo "</tr>";
+}
+echo "</table>";
+?>
